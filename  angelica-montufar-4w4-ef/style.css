@@ -1603,6 +1603,8 @@ section.gabarit article {
   margin: 1%;
   padding: 1rem;
   text-align: center;
+  background-color: #c2ec8b;
+  box-shadow: 5px 10px 15px #668f30;
 }
 
 section.gabarit article p {
@@ -1628,5 +1630,30 @@ section.gabarit article a {
     width: 31%;
     margin: 1%;
   }
+}
+
+/***** select section ******/
+.sessionSelect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #aaa;
+  width: 95%;
+  margin: 1%;
+  padding: 1rem;
+  text-align: center;
+  background-color: red;
+}
+
+.sessionSelect p {
+  margin: .4rem;
+  font-size: 1rem;
+}
+
+.sessionSelect a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

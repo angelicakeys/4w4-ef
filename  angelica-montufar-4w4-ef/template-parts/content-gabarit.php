@@ -11,9 +11,11 @@ global $tPropriété;
 <!-- <divNoSession>
     <h4><?php //echo $tPropriété['session'] ?> <h4>
 </divNoSession> -->
-<article>
+<article id="sessionCours">
+   
 	<p><?php echo $tPropriété['titrePartiel'] /* . " - " . $tPropriété['session'] */  ?></p>
 	<a href="<?php echo get_permalink() ?>"><?php echo $tPropriété['sigle']; ?></a>
 	 <p> <?php echo $tPropriété['nbHeure']; ?></p> 
+ 
 </article>
 

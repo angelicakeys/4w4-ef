@@ -15,7 +15,7 @@ section.gabarit{
     flex-direction: row;
     flex-wrap: wrap;
 
-article {
+    article {
     display : flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,6 +25,9 @@ article {
     margin : 1%;
     padding  : 1rem;
     text-align : center;
+    background-color: rgb(194, 236, 139);
+    box-shadow: 5px 10px 15px rgb(102, 143, 48);
+    
     p {
         margin: .4rem;
         font-size: 1rem;
@@ -34,6 +37,8 @@ article {
         font-weight: bold;
         text-decoration: none;
     }
+
+    
 }
 @include tablet {
     article {
@@ -48,3 +53,29 @@ article {
     }
 }
 }
+
+/***** select section ******/
+
+.sessionSelect{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border : 1px solid #aaa;
+    width : 95%;
+    margin : 1%;
+    padding  : 1rem;
+    text-align : center;
+    background-color: red;
+    p {
+        margin: .4rem;
+        font-size: 1rem;
+    }
+    a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+
