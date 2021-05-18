@@ -26,7 +26,7 @@ get_header();
 				?>	
 			
 			</header><!-- .page-header -->
-			<section class="galerie">
+			<section class="gabarit">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
