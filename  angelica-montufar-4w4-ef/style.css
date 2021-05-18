@@ -1529,11 +1529,15 @@ La barre du millieu
   font-size: 4rem;
   color: #af2929;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .page-header .archive-description, .entry-header .archive-description {
   font-size: 1rem;
   color: #6b767a;
+  display: flex;
+  justify-content: center;
 }
 
 .page-header .archive-description p, .entry-header .archive-description p {
@@ -1547,6 +1551,7 @@ La barre du millieu
   color: #fff;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .site-footer .ligne-footer {
@@ -1576,21 +1581,21 @@ La barre du millieu
 
 /* local gabarit
 --------------------------------------------- */
-.divNoSession {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
+/* .divNoSession{
 
-.divNoSession h4 {
-  font-size: 50px;
-}
-
+    h4{
+        font-size: 50px;
+    }
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+} */
 section.gabarit {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 section.gabarit article {
@@ -1599,8 +1604,8 @@ section.gabarit article {
   justify-content: space-between;
   align-items: center;
   border: 1px solid #aaa;
-  width: 95%;
-  margin: 1%;
+  width: 20%;
+  margin: 2%;
   padding: 1rem;
   text-align: center;
   background-color: #c2ec8b;
@@ -1608,52 +1613,78 @@ section.gabarit article {
 }
 
 section.gabarit article p {
-  margin: .4rem;
-  font-size: 1rem;
+  display: none;
 }
 
 section.gabarit article a {
   font-size: 1.5rem;
   font-weight: bold;
+  writing-mode: vertical-rl;
   text-decoration: none;
 }
 
-@media (min-width: 800px) {
-  section.gabarit article {
-    width: 47%;
-    margin: 1%;
-  }
-}
-
 @media (min-width: 1200px) {
+  section.gabarit {
+    justify-content: center;
+    align-items: center;
+  }
   section.gabarit article {
     width: 31%;
     margin: 1%;
+    padding: 1rem;
+    text-align: center;
+  }
+  section.gabarit article p {
+    display: flex;
+  }
+  section.gabarit article a {
+    writing-mode: horizontal-tb;
+  }
+}
+
+@media (min-width: 800px) {
+  section.gabarit {
+    justify-content: center;
+    align-items: center;
+  }
+  section.gabarit article {
+    width: 20%;
+    margin: 1%;
+    text-align: center;
+  }
+  section.gabarit article p {
+    display: flex;
+  }
+  section.gabarit article a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    writing-mode: horizontal-tb;
   }
 }
 
 /***** select section ******/
-.sessionSelect {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #aaa;
-  width: 95%;
-  margin: 1%;
-  padding: 1rem;
-  text-align: center;
-  background-color: red;
+/* .sessionSelect{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border : 1px solid #aaa;
+    width : 95%;
+    margin : 1%;
+    padding  : 1rem;
+    text-align : center;
+    background-color: red;
+    p {
+        margin: .4rem;
+        font-size: 1rem;
+    }
+    a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
 }
 
-.sessionSelect p {
-  margin: .4rem;
-  font-size: 1rem;
-}
-
-.sessionSelect a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-}
+ */
 /*# sourceMappingURL=style.css.map */

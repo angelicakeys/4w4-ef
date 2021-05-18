@@ -1,5 +1,5 @@
 
-.divNoSession{
+/* .divNoSession{
 
     h4{
         font-size: 50px;
@@ -8,12 +8,14 @@
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
-}
+} */
 
 section.gabarit{
     display : flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+   
 
     article {
     display : flex;
@@ -21,42 +23,91 @@ section.gabarit{
     justify-content: space-between;
     align-items: center;
     border : 1px solid #aaa;
-    width : 95%;
-    margin : 1%;
+    width : 20%;
+    margin : 2%;
     padding  : 1rem;
     text-align : center;
     background-color: rgb(194, 236, 139);
     box-shadow: 5px 10px 15px rgb(102, 143, 48);
     
     p {
-        margin: .4rem;
-        font-size: 1rem;
+        display: none;
+       
     }
     a {
         font-size: 1.5rem;
         font-weight: bold;
+        writing-mode: vertical-rl;
         text-decoration: none;
     }
 
     
 }
-@include tablet {
-    article {
-        width : 47%;
-        margin : 1%;
-    }
 }
+
+
 @include desktop {
-    article {
-    width : 31%;
-    margin : 1%;
+   
+    section.gabarit{
+    
+        justify-content: center;
+        align-items: center;
+    
+        article {
+   
+        width : 31%;
+        margin : 1%;
+        padding  : 1rem;
+        text-align : center;
+      
+        
+        p {
+            display: flex;
+    
+        }
+        a {
+           
+            writing-mode: horizontal-tb;   
+        }
+
+    }
     }
 }
-}
+
+@include tablet {
+
+     section.gabarit{
+     
+         justify-content: center;
+         align-items: center;
+     
+        article {
+    
+        width : 20%;
+        margin : 1%;
+        text-align : center;
+       
+         p {
+             display: flex;
+            }
+
+         a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+             writing-mode: horizontal-tb;   
+         }
+        }
+     }
+ }
+
+ 
+
+
 
 /***** select section ******/
 
-.sessionSelect{
+/* .sessionSelect{
     display : flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,4 +129,4 @@ section.gabarit{
     }
 }
 
-
+ */

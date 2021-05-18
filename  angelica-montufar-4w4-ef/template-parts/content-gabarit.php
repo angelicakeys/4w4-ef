@@ -8,10 +8,12 @@
  */
 global $tPropriété;
 ?>
-<!-- <divNoSession>
+
+<!-- permet de mettre le numero de la session, il c'est jamais placer il comme il faut :( -->
+<!-- <divNoSession> 
     <h4><?php //echo $tPropriété['session'] ?> <h4>
 </divNoSession> -->
-<article id="sessionCours">
+<article>
    
 	<p><?php echo $tPropriété['titrePartiel'] /* . " - " . $tPropriété['session'] */  ?></p>
 	<a href="<?php echo get_permalink() ?>"><?php echo $tPropriété['sigle']; ?></a>

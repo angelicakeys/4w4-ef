@@ -3,6 +3,7 @@
     font-weight: bold;
     font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},3rem);
     margin-bottom: 0;
+   
     a {
         text-decoration: none;
     }
@@ -23,10 +24,14 @@
         font-size: 4rem;
         color: rgb(175, 41, 41);
         margin-bottom: 0;
+        display: flex;
+        justify-content: center;
     }
     .archive-description {
         font-size: 1rem;
         color: rgb(107, 118, 122);
+        display: flex;
+        justify-content: center;
         p{
             margin :0;
         }
