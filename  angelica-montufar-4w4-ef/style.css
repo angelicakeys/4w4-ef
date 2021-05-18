@@ -1573,4 +1573,60 @@ La barre du millieu
 #secondary {
   padding-left: 8%;
 }
+
+/* local gabarit
+--------------------------------------------- */
+.divNoSession {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.divNoSession h4 {
+  font-size: 50px;
+}
+
+section.gabarit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section.gabarit article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #aaa;
+  width: 95%;
+  margin: 1%;
+  padding: 1rem;
+  text-align: center;
+}
+
+section.gabarit article p {
+  margin: .4rem;
+  font-size: 1rem;
+}
+
+section.gabarit article a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  section.gabarit article {
+    width: 47%;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.gabarit article {
+    width: 31%;
+    margin: 1%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

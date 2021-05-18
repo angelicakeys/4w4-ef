@@ -28,15 +28,21 @@ get_header();
 			</header><!-- .page-header -->
 			<section class="gabarit">
 			<?php
+
+		
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
 				convertirTableau($tPropriété);
 				get_template_part( 'template-parts/content', 'gabarit' );
+			/***AJOUT*/
 
+		
+			/***AJOUT*/
 			endwhile;?>
-
+			
 			</section>
+
 
 		<?php endif; ?>
 		?>

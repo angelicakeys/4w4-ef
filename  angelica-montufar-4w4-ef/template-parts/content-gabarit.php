@@ -8,7 +8,9 @@
  */
 global $tPropriété;
 ?>
-
+<!-- <divNoSession>
+    <h4><?php //echo $tPropriété['session'] ?> <h4>
+</divNoSession> -->
 <article>
 	<p><?php echo $tPropriété['titrePartiel'] /* . " - " . $tPropriété['session'] */  ?></p>
 	<a href="<?php echo get_permalink() ?>"><?php echo $tPropriété['sigle']; ?></a>

@@ -1,13 +1,50 @@
-.gabarit{
 
+.divNoSession{
+
+    h4{
+        font-size: 50px;
+    }
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+section.gabarit{
     display : flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 
-
- .coursDiv {
-        margin : 2%;
-        border: 2px solid red;
-       
-      }
+article {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border : 1px solid #aaa;
+    width : 95%;
+    margin : 1%;
+    padding  : 1rem;
+    text-align : center;
+    p {
+        margin: .4rem;
+        font-size: 1rem;
+    }
+    a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+@include tablet {
+    article {
+        width : 47%;
+        margin : 1%;
+    }
+}
+@include desktop {
+    article {
+    width : 31%;
+    margin : 1%;
+    }
+}
 }
